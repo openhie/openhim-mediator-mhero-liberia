@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/jembi/openhim-mediator-mhero.svg?branch=master)](https://travis-ci.org/jembi/openhim-mediator-mhero) [![codecov.io](https://codecov.io/github/jembi/openhim-mediator-mhero/coverage.svg?branch=master)](https://codecov.io/github/jembi/openhim-mediator-mhero?branch=master)
+[![Build Status](https://travis-ci.org/openhie/openhim-mediator-mhero-liberia.svg?branch=master)](https://travis-ci.org/openhie/openhim-mediator-mhero-liberia) [![codecov.io](https://codecov.io/github/openhie/openhim-mediator-mhero-liberia/coverage.svg?branch=master)](https://codecov.io/github/openhie/openhim-mediator-mhero-liberia?branch=master)
 
 mHero Mediator
 ==============
@@ -18,7 +18,7 @@ $ sudo apt-get update
 $ sudo apt-get install openhim-mediator-mhero-liberia openhim-console
 ```
 
-**Note**: If you change the root@openhim.org password (e.g. on first login) __after__ installing the mediator then the mediator config has to be changed here to reflect that: `/usr/share/openhim-mediator-mhero/config/config.json`
+**Note**: If you change the root@openhim.org password (e.g. on first login) __after__ installing the mediator then the mediator config has to be changed here to reflect that: `/usr/share/openhim-mediator-mhero-liberia/config/config.json`
 
 When the mediator starts, it registers itself with the OpenHIM-core. Once, this is done you may configure the mediator directly from the OpenHIM-console by going to Mediator > mHero Mediator. Here you will need to setup the following:
 
