@@ -15,7 +15,7 @@ The easiest way to install this mediator is to use the debian package which will
 ```sh
 $ sudo add-apt-repository ppa:openhie/release
 $ sudo apt-get update
-$ sudo apt-get install openhim-mediator-mhero openhim-console
+$ sudo apt-get install openhim-mediator-mhero-liberia openhim-console
 ```
 
 **Note**: If you change the root@openhim.org password (e.g. on first login) __after__ installing the mediator then the mediator config has to be changed here to reflect that: `/usr/share/openhim-mediator-mhero/config/config.json`
