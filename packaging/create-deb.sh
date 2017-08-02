@@ -21,7 +21,7 @@ cd $HOME
 echo $HOME
 
 PKG=openhim-mediator-mhero-liberia
-PKGVER=0.6.0
+PKGVER=1.4.1
 
 echo -n "Would you like to upload the build(s) to Launchpad? [y/N] "
 read UPLOAD

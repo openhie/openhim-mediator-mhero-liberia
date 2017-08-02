@@ -1,15 +1,11 @@
-Source: openhim-mediator-mhero-liberia
+Package: openhim-mediator-mhero-liberia
+Version: 1.4.1-3~trusty
+Architecture: amd64
 Maintainer: Ally Shaban <allyshaban5@gmail.com>
+Installed-Size: 39
+Depends: openhim-core-js
 Section: web
 Priority: optional
-Standards-Version: 3.9.1
-Build-Depends: debhelper (>= 7)
 Homepage: https://github.com/openhie/openhim-mediator-mhero-liberia
-
-
-Package: openhim-mediator-mhero-liberia
-Architecture: amd64
-Depends: openhim-core-js
-Recommends:
 Description: OpenHIM mediator for mHero
  An mHero mediator for data synchronisation.

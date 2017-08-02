@@ -1,0 +1,40 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 02 Aug 2017 02:49:25 +0300
+Source: openhim-mediator-mhero-liberia
+Binary: openhim-mediator-mhero-liberia
+Architecture: source
+Version: 1.4.1-3~trusty
+Distribution: trusty
+Urgency: medium
+Maintainer: Ally Shaban <allyshaban5@gmail.com>
+Changed-By: Ally Shaban <allyshaban5@gmail.com>
+Description: 
+ openhim-mediator-mhero-liberia - OpenHIM mediator for mHero
+Changes: 
+ openhim-mediator-mhero-liberia (1.4.1-3~trusty) trusty; urgency=medium
+ .
+   * Release Debian Build 1.4.1-3.
+Checksums-Sha1: 
+ 4f12561f3e67a5f6bd5921ce1d68343e726aec0a 1252 openhim-mediator-mhero-liberia_1.4.1-3~trusty.dsc
+ 2281950a463b09ebbe1f0e4da3669a0b90bbddc1 1915 openhim-mediator-mhero-liberia_1.4.1-3~trusty.tar.gz
+Checksums-Sha256: 
+ 1cef30de7ee83d520d2892935736be480e2761f12b5c22bab53c3f7457618ba4 1252 openhim-mediator-mhero-liberia_1.4.1-3~trusty.dsc
+ c626157bdfd060e8972ea1b0c6ee34dca2cb458b56e05afde0430fbcca7d865f 1915 openhim-mediator-mhero-liberia_1.4.1-3~trusty.tar.gz
+Files: 
+ 31011221c30349bfeaf07b27acab0e4a 1252 web optional openhim-mediator-mhero-liberia_1.4.1-3~trusty.dsc
+ 0b7de548ef73dd8695ece46d604c1ee3 1915 web optional openhim-mediator-mhero-liberia_1.4.1-3~trusty.tar.gz
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJZgROvAAoJEDcstGqv+EmWlvcH/2TVIsL2/V6dWLK8ttQZ6hy9
+Q5nixgY+5ugL3yEQEAsdrO4S+WfYTrwBG5MdoXAgIAbAlMAK9Wd4xI8vD36OpN/b
+0/sNh/D7R3+yqRnaPKr65KW2Y9jMYSXc1ErCq1uVM9b28lkxXrLnM0ERlidGUjCo
+GeFLGUFXdf48Rzlk2Pe9ZEKnSK/xQZb/BkajGHAcZS2w+ssSpNlavCFCbpk+EcPE
+HV9MA9+rvnpcEyaGVauPS9AZms+hVZ0slmas+geDXuKRumXRasB4zyNPBtPUOqCo
+mbalz5JNYiX9y1b3gG+V4TgZsh3YSsnnxwU23Kf6ByDhJL3YQbex3ThFCeNvMK8=
+=83Jk
+-----END PGP SIGNATURE-----

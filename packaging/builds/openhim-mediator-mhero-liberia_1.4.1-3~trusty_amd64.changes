@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 02 Aug 2017 02:49:25 +0300
+Source: openhim-mediator-mhero-liberia
+Binary: openhim-mediator-mhero-liberia
+Architecture: source amd64
+Version: 1.4.1-3~trusty
+Distribution: trusty
+Urgency: medium
+Maintainer: Ally Shaban <allyshaban5@gmail.com>
+Changed-By: Ally Shaban <allyshaban5@gmail.com>
+Description: 
+ openhim-mediator-mhero-liberia - OpenHIM mediator for mHero
+Changes: 
+ openhim-mediator-mhero-liberia (1.4.1-3~trusty) trusty; urgency=medium
+ .
+   * Release Debian Build 1.4.1-3.
+Checksums-Sha1: 
+ 7799dba22d905311a2f3449c1a46201111be2db0 731 openhim-mediator-mhero-liberia_1.4.1-3~trusty.dsc
+ c98ef13921ab540cc1d0fd7d712c808d6f47a98b 1897 openhim-mediator-mhero-liberia_1.4.1-3~trusty.tar.gz
+ d534390d2467d34cf65001671b68d5b66c8445f7 2334 openhim-mediator-mhero-liberia_1.4.1-3~trusty_amd64.deb
+Checksums-Sha256: 
+ 87087354ddce9ff17818b4183d8e93031bc0d9d58f735445a3734c87833471a8 731 openhim-mediator-mhero-liberia_1.4.1-3~trusty.dsc
+ 89c31551a384ca06932d079cc87be381617a2454a1a07ba2a53c3809b59c8691 1897 openhim-mediator-mhero-liberia_1.4.1-3~trusty.tar.gz
+ 7c552953d8fdd7ed0b54d5a26f7fcbfcda6ba7325414c749d0f3ba45f60dbe81 2334 openhim-mediator-mhero-liberia_1.4.1-3~trusty_amd64.deb
+Files: 
+ ae96d8fda6993cf01950929b9b183e07 731 web optional openhim-mediator-mhero-liberia_1.4.1-3~trusty.dsc
+ 126f10aa578b41f84e1dc40599359273 1897 web optional openhim-mediator-mhero-liberia_1.4.1-3~trusty.tar.gz
+ 61340e3f0467004eb338cf78429e2b89 2334 web optional openhim-mediator-mhero-liberia_1.4.1-3~trusty_amd64.deb
