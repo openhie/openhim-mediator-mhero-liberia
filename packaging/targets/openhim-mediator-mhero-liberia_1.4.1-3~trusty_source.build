@@ -48,8 +48,8 @@ E: openhim-mediator-mhero-liberia source: untranslatable-debconf-templates templ
 E: openhim-mediator-mhero-liberia source: untranslatable-debconf-templates templates: 19
 E: openhim-mediator-mhero-liberia source: untranslatable-debconf-templates templates: 24
 E: openhim-mediator-mhero-liberia source: not-using-po-debconf
-W: openhim-mediator-mhero-liberia source: debian-rules-missing-recommended-target build-indep
 W: openhim-mediator-mhero-liberia source: debian-rules-missing-recommended-target build-arch
+W: openhim-mediator-mhero-liberia source: debian-rules-missing-recommended-target build-indep
 W: openhim-mediator-mhero-liberia source: no-debian-copyright
 W: openhim-mediator-mhero-liberia source: ancient-standards-version 3.9.1 (current is 3.9.5)
 Finished running lintian.
