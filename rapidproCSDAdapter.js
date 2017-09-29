@@ -94,8 +94,6 @@ module.exports = function (config) {
      */
     convertCSDToContact: function (entity) {
       const doc = new Dom().parseFromString(entity)
-      winston.error(xpath.select('/provider/@entityID', doc)[0].value)
-      process.exit()
       const uuid = xpath.select('/provider/@entityID', doc)[0].value
       const name = xpath.select('/provider/demographic/name/commonName/text()', doc)[0].toString()
       const telNodes = xpath.select('/provider/demographic/contactPoint/codedType[@code="BP" and @codingScheme="urn:ihe:iti:csd:2013:contactPoint"]/text()', doc)

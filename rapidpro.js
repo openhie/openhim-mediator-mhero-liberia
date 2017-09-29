@@ -233,7 +233,6 @@ module.exports = function (config) {
             if (newContact.uuid) {
               callback(null, newContact, orchestrations)
             } else {
-        //winston.error('No uuid set in contact, it probably didn\'t get saved in RapidPro')
             callback(null, newContact, orchestrations)
             }
           } else {
