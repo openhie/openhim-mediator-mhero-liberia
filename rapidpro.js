@@ -195,7 +195,7 @@ module.exports = function (config) {
     if(contact.hasOwnProperty("uuid"))
     url = url + "?uuid=" + contact.uuid
     let before = new Date()
-    winston.error(url)
+
     let options = {
       url: url,
       headers: {

@@ -220,6 +220,7 @@ function setupApp () {
       //ensure all contacts starts with country code
       const promises = []
       contacts = contacts.map((c) => {
+        unique(c.urns)
         for(var i=c.urns.length-1;i>=0;i--){
           var index = i
           var originalCont = c.urns[index]
@@ -269,7 +270,7 @@ function setupApp () {
             }
             else {
               c.urns[index] = modifiedCont[0]
-              unique(c.urns);
+              unique(c.urns)
             }
             resolve()
           }
