@@ -259,7 +259,7 @@ function setupApp () {
       const promises = []
       contacts = contacts.map((c) => {
         unique(c.urns)
-        for(var i=c.urns.length-1;i>=0;i--){
+        for(var i=(c.urns.length-1);i>=0;i--){
           var index = i
           var originalCont = c.urns[index]
           promises.push(new Promise((resolve, reject) => {
