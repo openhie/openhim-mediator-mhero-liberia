@@ -15,6 +15,7 @@ const unique = require('array-unique');
 const async = require('async')
 const moment = require('moment')
 const xpath = require('xpath')
+const request = require('request')
 const _ = require('underscore');
 const fs = require('fs');
 const Openinfoman = require('./openinfoman')
@@ -449,23 +450,7 @@ function setupApp () {
                         return reportFailure(err, req)
                       }
                       winston.info('Done loading provider directory.')
-
-                      res.writeHead(200, { 'Content-Type': 'application/json+openhim' })
-                      res.end(JSON.stringify({
-                        'x-mediator-urn': mediatorConfig.urn,
-                        status: 'Successful',
-                        request: {
-                          method: req.method,
-                          headers: req.headers,
-                          timestamp: req.timestamp,
-                          path: req.path
-                        },
-                        response: {
-                          status: 200,
-                          timestamp: new Date()
-                        },
-                        orchestrations: orchestrations
-                      }))
+                      return updateTransaction(req,"","Successful","200",orchestrations)
                     })
                   })
                 })
