@@ -48,7 +48,45 @@ process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 function setupApp () {
   const app = express()
 
+  function updateTransaction (req,body,statatusText,statusCode,orchestrations) {
+    const transactionId = req.headers['x-openhim-transactionid']
+    var update = {
+      'x-mediator-urn': mediatorConfig.urn,
+      status: statatusText,
+      response: {
+        status: statusCode,
+        timestamp: new Date(),
+        body: body
+      },
+      orchestrations: orchestrations
+    }
+    medUtils.authenticate(apiConf.api, function (err) {
+      if (err) {
+        return winston.error(err.stack);
+      }
+      var headers = medUtils.genAuthHeaders(apiConf.api)
+      var options = {
+        url: apiConf.api.apiURL + '/transactions/' + transactionId,
+        headers: headers,
+        json:update
+      }
+
+      request.put(options, function(err, apiRes, body) {
+        if (err) {
+          return winston.error(err);
+        }
+        if (apiRes.statusCode !== 200) {
+          return winston.error(new Error('Unable to save updated transaction to OpenHIM-core, received status code ' + apiRes.statusCode + ' with body ' + body).stack);
+        }
+        winston.info('Successfully updated transaction with id ' + transactionId);
+      });
+    })
+  }
+
   app.get('/sync', (req, res) => {
+  	res.end()
+    updateTransaction (req,"Still Processing","Processing","200","")
+
     req.timestamp = new Date()
     let orchestrations = []
     const openinfoman = Openinfoman(config.openinfoman)
@@ -312,10 +350,11 @@ function setupApp () {
         orchestrations = orchestrations.concat(orchs)
       }
       if (err) {
-        return reportFailure(err, req)
+        return updateTransaction(req,"","Failed","200",orchestrations)
       }
       if (!csdDoc) {
-        return reportFailure(new Error('No CSD document returned'), req)
+      	return updateTransaction(req,"","Failed","200",orchestrations)
+        //return reportFailure(new Error('No CSD document returned'), req)
       }
       winston.info('Done fetching providers.')
 
@@ -435,7 +474,7 @@ function setupApp () {
           })
         })
       }, (err) => {
-        return reportFailure(err, req)
+      	return updateTransaction(req,"","Successful","200",orchestrations)
       })
     })
   })
